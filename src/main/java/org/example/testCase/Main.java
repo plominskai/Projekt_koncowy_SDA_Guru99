@@ -1,13 +1,10 @@
-package org.example;
+package org.example.testCase;
 
-import org.openqa.selenium.By;
+import org.example.pages.HomePage;
+import org.example.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import java.util.List;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,5 +17,16 @@ public class Main {
 
         driver.get("https://demo.guru99.com/v4/");
         driver.manage().window().maximize();
+//        driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).click();
+
+        HomePage homePage = new HomePage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+
+        loginPage.enterUserName("mngr515430");
+        loginPage.enterPassword("agErAvE");
+//        loginPage.loginClick();
+
+
+
     }
 }

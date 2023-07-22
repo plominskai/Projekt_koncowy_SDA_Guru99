@@ -2,9 +2,12 @@ package org.example.testCase;
 
 import org.example.pages.HomePage;
 import org.example.pages.LoginPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.time.Duration;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,16 +20,23 @@ public class Main {
 
         driver.get("https://demo.guru99.com/v4/");
         driver.manage().window().maximize();
-//        driver.findElement(By.xpath("/html/body/form/table/tbody/tr[1]/td[2]/input")).click();
-
+//
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
 
         loginPage.enterUserName("mngr515430");
         loginPage.enterPassword("agErAvE");
-//        loginPage.loginClick();
 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        };
+
+        loginPage.clickAcceptCookies();
+        loginPage.clickLogin();
 
     }
 }

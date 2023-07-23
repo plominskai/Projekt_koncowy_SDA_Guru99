@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "3492feac-394b-4b02-99d3-5eb9ba45005d",
+		"name": "Projekt końcowy SDA - Guru99",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26429867"
+	},
+	"item": [
+		{
+			"name": "Test pobrania danych klienta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.guru99.com/v4/manager/CustomerRegMsg.php?cid=75642",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"v4",
+						"manager",
+						"CustomerRegMsg.php"
+					],
+					"query": [
+						{
+							"key": "cid",
+							"value": "75642"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test dodawania nowego klienta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "name: Ala Niemakota\r\nrad1: f\r\ndob: 1995-05-06\r\naddr: Jasna 15\r\ncity: Kudo\r\nstate: none\r\npinno: 753158\r\ntelephoneno: 951753851\r\nemailid: mail@abd.com\r\npassword: Statment1111!\r\nsub: Submit",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.guru99.com/v4/manager/addcustomerpage.php",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"v4",
+						"manager",
+						"addcustomerpage.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test edycji danych istniejącego klienta",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "addr: InnaUlica 10\r\ncity: Pierwszemiasto\r\nstate: Wojewo\r\npinno: 999666\r\ntelephoneno: 555999888\r\nemailid: marek@janek.com\r\nsubmitted: true\r\ntxtaccno: 75642\r\nsub: Submit"
+				},
+				"url": {
+					"raw": "https://demo.guru99.com/v4/manager/editCustomerPage.php/75642",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"v4",
+						"manager",
+						"editCustomerPage.php",
+						"75642"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test usunięcia klienta",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "cusid: 59882\r\nAccSubmit: Submit",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demo.guru99.com/v4/manager/DeleteCustomerInput.php",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"v4",
+						"manager",
+						"DeleteCustomerInput.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test utworzenia nowego klienta - niepoprawna ilość cyfr w PINie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "name: Ala Mala\r\nrad1: f\r\ndob: 1995-12-06\r\naddr: Ciemna 15\r\ncity: Ruda\r\nstate: none\r\npinno: 7534\r\ntelephoneno: 951753812\r\nemailid: mail@okl.com\r\npassword: Statment11qq!\r\nsub: Submit"
+				},
+				"url": {
+					"raw": "https://demo.guru99.com/v4/manager/addcustomerpage.php",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"guru99",
+						"com"
+					],
+					"path": [
+						"v4",
+						"manager",
+						"addcustomerpage.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

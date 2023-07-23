@@ -1,11 +1,10 @@
 package org.example.testCase;
 
-import org.example.pages.HomePage;
 import org.example.pages.LoginPage;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
@@ -20,14 +19,15 @@ public class Main {
 
         driver.get("https://demo.guru99.com/v4/");
         driver.manage().window().maximize();
-//
-        HomePage homePage = new HomePage(driver);
-        LoginPage loginPage = new LoginPage(driver);
+
+        LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+        loginPage.clickAcceptCookies();
 
         loginPage.enterUserName("mngr515430");
         loginPage.enterPassword("agErAvE");
-
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         try {
             Thread.sleep(5000);
@@ -35,7 +35,9 @@ public class Main {
             throw new RuntimeException(e);
         };
 
-        loginPage.clickAcceptCookies();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
         loginPage.clickLogin();
 
     }

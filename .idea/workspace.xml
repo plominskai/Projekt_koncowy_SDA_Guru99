@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7760b687-b2b0-430c-95cb-54fa6c3d9542" name="Changes" comment="HomePage added">
+    <list default="true" id="7760b687-b2b0-430c-95cb-54fa6c3d9542" name="Changes" comment="path changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Steps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690199499333</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="path changed">
+      <created>1690204318879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690204318880</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +220,7 @@
     <MESSAGE value="commit idea" />
     <MESSAGE value="commit added missing files" />
     <MESSAGE value="HomePage added" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomePage added" />
+    <MESSAGE value="path changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="path changed" />
   </component>
 </project>

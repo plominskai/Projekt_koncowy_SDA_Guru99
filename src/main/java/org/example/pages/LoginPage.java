@@ -1,6 +1,5 @@
 package org.example.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,9 +19,6 @@ public class LoginPage {
     @FindBy(name = "password")
     WebElement passWord;
 
-    @FindBy(id = "save")
-    WebElement acceptCookies;
-
     @FindBy(name = "btnLogin")
     WebElement login;
 
@@ -33,13 +29,6 @@ public class LoginPage {
 
     public void enterPassword(String userPassword) {
         passWord.sendKeys(userPassword);
-    }
-
-    public void clickAcceptCookies() {
-        try {
-            acceptCookies.click();
-        } catch (Exception e) {
-        }
     }
 
     public void clickLogin() {

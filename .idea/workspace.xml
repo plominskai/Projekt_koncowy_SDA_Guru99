@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7760b687-b2b0-430c-95cb-54fa6c3d9542" name="Changes" comment="timeout added, acceptCookies and click Login">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="7760b687-b2b0-430c-95cb-54fa6c3d9542" name="Changes" comment="commit added missing files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/managers/PageObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/managers/PageObjectManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/testCase/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/End2End_Test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/End2End_Test.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,9 @@
         <option name="workspaceImportEnabled" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2SnlYfzU9fQGTMAuJd4P1xDZwC7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -173,7 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690126203425</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit idea">
+      <created>1690191713505</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690191713505</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit added missing files">
+      <created>1690191898794</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690191898794</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -182,6 +202,8 @@
     <MESSAGE value="Updated Main class with wedriver" />
     <MESSAGE value="Created LoginPage and HomePage" />
     <MESSAGE value="timeout added, acceptCookies and click Login" />
-    <option name="LAST_COMMIT_MESSAGE" value="timeout added, acceptCookies and click Login" />
+    <MESSAGE value="commit idea" />
+    <MESSAGE value="commit added missing files" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit added missing files" />
   </component>
 </project>

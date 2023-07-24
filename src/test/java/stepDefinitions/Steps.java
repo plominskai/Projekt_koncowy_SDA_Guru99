@@ -1,15 +1,19 @@
 package stepDefinitions;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
 import org.example.managers.PageObjectManager;
 import org.example.pages.HomePage;
 import org.example.pages.LoginPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 public class Steps {
@@ -22,7 +26,7 @@ public class Steps {
 
     @Given("^user is on loginPage$")
     public void userIsOnLoginPage() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\tzjy\\OneDrive - GFT Technologies SE\\Desktop\\uuu\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\plomi\\Projekt_koncowy_SDA_Guru99\\chromedriver\\chromedriver.exe");
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--remote-allow-origins=*");
         driver = new ChromeDriver(ops);
